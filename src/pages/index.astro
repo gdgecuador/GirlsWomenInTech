@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import SpeakersGrid from '../components/SpeakersGrid.astro';
+import Schedule from '../components/Schedule.astro';
+import Footer from '../components/Footer.astro';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import Supporters from '../components/Supporters.astro';
+
+---
+
+<Layout title="Niñas y mujeres en tech">
+<Header />
+<main>
+<About />
+<SpeakersGrid />
+<Schedule />
+<Supporters />
+</main>
+<Footer />
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+</Layout>
