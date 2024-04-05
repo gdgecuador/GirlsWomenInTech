@@ -8,6 +8,46 @@ import Footer from '../components/Footer.astro';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import Supporters from '../components/Supporters.astro';
+import type { Speaker } from '../types';
+
+const speakers: Array<Speaker> = [
+	{
+		name: 'Mirian Villanova, MSc.',
+		image: 'assets/img/speakers/Speaker1.png',
+		role: 'CEO de TechGirls',
+		bio: 'CEO de TechGirls'
+	},
+	{
+		name: 'Ing. Maria Perez',
+		image: 'assets/img/speakers/Speaker2.png',
+		role: 'Directora general de GranEmpresa',
+		bio: 'Directora general de GranEmpresa'
+	},
+	{
+		name: 'Luciana Peralta, PhD.',
+		image: 'assets/img/speakers/Speaker3.png',
+		role: 'Asistente de la Directora Regional de Dunder Mifflin',
+		bio: 'Asistente de la Directora Regional de Dunder Mifflin'
+	},
+	{
+		name: 'Joangie Martinez, PhD.',
+		image: 'assets/img/speakers/Speaker4.png',
+		role: 'Directora Regional de Dunder Mifflin',
+		bio: 'Directora Regional de Dunder Mifflin',
+	},
+	{
+		name: 'Angie Marquez, MSc.',
+		image: 'assets/img/speakers/Speaker5.png',
+		role: 'Agente de Shield',
+		bio: 'Agente de Shield'
+	},
+	{
+		name: 'Ing. Juana Victoria',
+		image: 'assets/img/speakers/Speaker6.png',
+		role: 'Directora de GranEmpresa',
+		bio: 'Directora de GranEmpresa',
+	}
+]
 
 ---
 
@@ -15,7 +55,7 @@ import Supporters from '../components/Supporters.astro';
 <Header />
 <main>
 <About />
-<SpeakersGrid />
+<SpeakersGrid speakers={speakers} />
 <Schedule />
 <Supporters />
 </main>
