@@ -1,5 +1,5 @@
 ---
-import { type Speaker } from '../types';
+import type { Speaker } from '../types';
 
 interface Props {
 	speakers: Speaker[];
@@ -30,10 +30,26 @@ const { speakers } = Astro.props;
               <h3>{ speaker.name }</h3>
               <p>{ speaker.role }</p>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                {
+                  speaker.twitter && (
+                    <a href={speaker.twitter}><i class="bi bi-twitter"></i></a>
+                  )
+                }
+                {
+                  speaker.facebook && (
+                    <a href={speaker.facebook}><i class="bi bi-facebook"></i></a>
+                  )
+                }
+                {
+                  speaker.instagram && (
+                    <a href={speaker.instagram}><i class="bi bi-instagram"></i></a>
+                  )
+                }
+                {
+                  speaker.linkedin && (
+                    <a href={speaker.linkedin}><i class="bi bi-linkedin"></i></a>
+                  )
+                }
               </div>
             </div>
           </div>
@@ -42,5 +58,107 @@ const { speakers } = Astro.props;
       }
     </div>
   </div>
+</section>
 
-</section><!-- End Speakers Section -->
+<style>
+  #speakers {
+    padding: 60px 0 30px 0;
+  }
+
+  #speakers .speaker {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  #speakers .speaker .details {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #speakers .speaker .details h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  #speakers .speaker .details p {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  #speakers .speaker .details .social {
+    height: 40px;
+  }
+
+  #speakers .speaker .details .social i {
+    line-height: 0;
+    margin: 0 2px;
+  }
+
+  #speakers .speaker .details a {
+    color: #fff;
+  }
+
+  #speakers .speaker .details a:hover {
+    color: #9741E2;
+  }
+
+  #speakers .speaker:hover .details {
+    bottom: 0;
+  }
+
+  #speakers-details {
+    padding: 60px 0;
+  }
+
+  #speakers-details .details h2 {
+    color: #112363;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  #speakers-details .details .social {
+    margin-bottom: 15px;
+  }
+
+  #speakers-details .details .social a {
+    background: #e9edfb;
+    color: #112363;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #speakers-details .details .social a:hover {
+    background: #f82249;
+    color: #fff;
+  }
+
+  #speakers-details .details .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  #speakers-details .details p {
+    color: #112363;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+</style>

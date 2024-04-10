@@ -8,58 +8,20 @@ import Footer from '../components/Footer.astro';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import Supporters from '../components/Supporters.astro';
-import type { Speaker } from '../types';
+import { speakers, schedule } from '../data';
 
-const speakers: Array<Speaker> = [
-	{
-		name: 'Mirian Villanova, MSc.',
-		image: 'assets/img/speakers/Speaker1.png',
-		role: 'CEO de TechGirls',
-		bio: 'CEO de TechGirls'
-	},
-	{
-		name: 'Ing. Maria Perez',
-		image: 'assets/img/speakers/Speaker2.png',
-		role: 'Directora general de GranEmpresa',
-		bio: 'Directora general de GranEmpresa'
-	},
-	{
-		name: 'Luciana Peralta, PhD.',
-		image: 'assets/img/speakers/Speaker3.png',
-		role: 'Asistente de la Directora Regional de Dunder Mifflin',
-		bio: 'Asistente de la Directora Regional de Dunder Mifflin'
-	},
-	{
-		name: 'Joangie Martinez, PhD.',
-		image: 'assets/img/speakers/Speaker4.png',
-		role: 'Directora Regional de Dunder Mifflin',
-		bio: 'Directora Regional de Dunder Mifflin',
-	},
-	{
-		name: 'Angie Marquez, MSc.',
-		image: 'assets/img/speakers/Speaker5.png',
-		role: 'Agente de Shield',
-		bio: 'Agente de Shield'
-	},
-	{
-		name: 'Ing. Juana Victoria',
-		image: 'assets/img/speakers/Speaker6.png',
-		role: 'Directora de GranEmpresa',
-		bio: 'Directora de GranEmpresa',
-	}
-]
 
 ---
 
 <Layout title="Niñas y mujeres en tech">
-<Header />
-<main>
-<About />
-<SpeakersGrid speakers={speakers} />
-<Schedule />
-<Supporters />
-</main>
-<Footer />
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	<Header />
+	<main>
+		<About />
+		<SpeakersGrid speakers={speakers} />
+		<Schedule schedule={schedule} />
+		<Supporters />
+	</main>
+	<Footer />
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 </Layout>
