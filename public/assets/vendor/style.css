@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #f82249;
+  color: #9741E2;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -210,7 +210,7 @@ h6 {
 }
 
 #hotels a:hover {
-  color: #f82249;
+  color: #9741E2;
 }
 
 #hotels .stars {
@@ -248,11 +248,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #f82249;
+  border: 1px solid #9741E2;
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #f82249;
+  background-color: #9741E2;
 }
 
 #gallery .swiper-slide-active {
@@ -265,7 +265,7 @@ h6 {
   }
 
   #gallery .swiper-slide-active {
-    border: 5px solid #f82249;
+    border: 5px solid #9741E2;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -328,7 +328,7 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #f82249;
+  font-family: #9741E2;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -359,7 +359,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed:hover {
-  color: #f82249;
+  color: #9741E2;
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -425,7 +425,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #f82249;
+  background: #9741E2;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -490,7 +490,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: #9741E2;
   border: 0;
   color: #fff;
 }
@@ -509,7 +509,7 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: #9741E2;
   border: 0;
   color: #fff;
 }
@@ -534,7 +534,7 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #f82249;
+  color: #9741E2;
 }
 
 #contact .contact-info address,
@@ -556,7 +556,7 @@ h6 {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: #9741E2;
 }
 
 #contact .contact-address,
@@ -631,7 +631,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #f82249;
+  border-color: #9741E2;
 }
 
 #contact .php-email-form input {
@@ -643,7 +643,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #f82249;
+  background: #9741E2;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -729,7 +729,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #9741E2;
   color: #fff;
 }
 
@@ -740,7 +740,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #9741E2;
 }
 
 #footer .footer-top .footer-links {
@@ -755,7 +755,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #9741E2;
   font-size: 18px;
 }
 
@@ -773,7 +773,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #9741E2;
 }
 
 #footer .footer-top .footer-contact {
@@ -795,7 +795,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
+  background: #9741E2;
   border: 0;
   width: 35%;
   padding: 6px 0;
