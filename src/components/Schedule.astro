@@ -27,15 +27,17 @@ const { schedule } = Astro.props;
           schedule.map(schedule => (
           <div class="row schedule-item">
             <div class="col-md-2"><time> { schedule.time }</time></div>
-            <div class="col-md-10">
+            <div class="col-md-10 d-flex align-items-center">
               <div class="speaker">
                 <img
                   src={schedule.speaker.image}
                   alt="Brenden Legros"
                 />
               </div>
-              <h4>{ schedule.title } <span>{ schedule.speaker.name }</span></h4>
-              <p> { schedule.description } </p>
+              <div>
+                <h4>{ schedule.title } <span>{ schedule.speaker.name }</span></h4>
+                <p> { schedule.description } </p>
+              </div>
             </div>
           </div>
           ))
@@ -137,8 +139,8 @@ const { schedule } = Astro.props;
     height: 60px;
     overflow: hidden;
     border-radius: 50%;
-    float: left;
     margin: 0 10px 10px 0;
+    flex-shrink: 0;
   }
 
   #schedule .schedule-item .speaker img {

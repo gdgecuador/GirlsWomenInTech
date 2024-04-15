@@ -25,29 +25,41 @@ const { speakers } = Astro.props;
               src={speaker.image}
               alt={speaker.name}
               class="img-fluid"
-            >
+            />
             <div class="details">
               <h3>{ speaker.name }</h3>
               <p>{ speaker.role }</p>
               <div class="social">
                 {
                   speaker.twitter && (
-                    <a href={speaker.twitter}><i class="bi bi-twitter"></i></a>
+                    <a
+                      href={speaker.twitter}
+                      target="_blank"
+                    ><i class="bi bi-twitter"></i></a>
                   )
                 }
                 {
                   speaker.facebook && (
-                    <a href={speaker.facebook}><i class="bi bi-facebook"></i></a>
+                    <a
+                      href={speaker.facebook}
+                      target="_blank"
+                    ><i class="bi bi-facebook"></i></a>
                   )
                 }
                 {
                   speaker.instagram && (
-                    <a href={speaker.instagram}><i class="bi bi-instagram"></i></a>
+                    <a
+                      href={speaker.instagram}
+                      target="_blank"
+                    ><i class="bi bi-instagram"></i></a>
                   )
                 }
                 {
                   speaker.linkedin && (
-                    <a href={speaker.linkedin}><i class="bi bi-linkedin"></i></a>
+                    <a
+                      href={speaker.linkedin}
+                      target="_blank"
+                    ><i class="bi bi-linkedin"></i></a>
                   )
                 }
               </div>
