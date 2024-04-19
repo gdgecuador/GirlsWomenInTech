@@ -2,6 +2,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gdgecuador.github.io',
-  base: 'GirlsWomenInTech'
+  site: 'https://girlsintic.gdggye.org'
 });
