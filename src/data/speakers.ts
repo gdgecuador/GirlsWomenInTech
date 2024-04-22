@@ -37,7 +37,7 @@ export const speakerMartha = {
 export const speakerSofia = {
   name: 'Sofía España',
   image: 'assets/img/speakers/Sofia_Espana.jpg',
-  role: '',
+  role: 'Ingeniera en mecatrónica',
   bio: 'Ing. en mecatrónica con experiencia en distintas áreas del mundo STEM',
 	inspiringPhrase: '<<El mundo es tan grande como tu mente te lo permita>>',
   linkedin: 'https://www.linkedin.com/in/sofia604/',
@@ -46,7 +46,7 @@ export const speakerSofia = {
 export const speakerAndrea = {
   name: 'Andrea Simbaña',
   image: 'assets/img/speakers/Andrea_Simbana.png',
-  role: '',
+  role: 'Ingeniera electrónica',
   bio: 'Andrea Simbaña, es ingeniera electrónica egresada de la UPS Quito, actualmente esta cursando una maestría en Educación con énfasis en TICs. Además de ser maestra de robótica en primaria y coach de competencia, es miembro voluntario del IEEE desde 2021. En el IEEE, ha desempeñado roles de secretaria, community manager, y actualmente forma parte de IEEE Students Sección Ecuador.',
 	inspiringPhrase: '<<La exploración espacial es un recordatorio diario de que somos capaces de más de lo que creemos posible, y que la curiosidad y la colaboración pueden llevarnos más allá de lo que imaginamos>> - Kellie Gerardi',
   linkedin: 'https://www.linkedin.com/in/andrea-simba%C3%B1a-778100214/',
