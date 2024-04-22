@@ -2,6 +2,8 @@
 
 Website para evento de niñas y mujeres en tech.
 
+![image](https://github.com/gdgecuador/GirlsWomenInTech/assets/51239030/31294c51-57d2-4464-979f-0393b2f7d623)
+
 El Día de las Niñas y Mujeres en Tech es una celebración que tiene como objetivo inspirar y educar a jóvenes sobre las oportunidades de carrera en el sector tecnológico. Este evento destaca cómo las mujeres están liderando y transformando la industria tecnológica a través de su trabajo y liderazgo. Es una oportunidad para que las participantes descubran diferentes trayectorias profesionale
 
 Para ejecutar el proyecto en desarrollo solo corra:
