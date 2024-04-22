@@ -14,6 +14,7 @@
    */
   const select = (el, all = false) => {
     el = el.trim()
+    if (!el) return
     if (all) {
       return [...document.querySelectorAll(el)]
     } else {

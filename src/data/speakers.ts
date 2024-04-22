@@ -30,7 +30,7 @@ export const speakerZully = {
 export const speakerMartha = {
   name: 'Martha Tomalá',
   image: 'assets/img/speakers/Martha_Tomala.jpeg',
-  role: 'Analista de datos',
+  role: 'Analista de Datos',
   bio: 'Soy ingeniera estadística y actualmente estoy finalizando un máster en Big Data y Ciencia de Datos. Actualmente desempeño el rol de analista de datos en una institución financiera. Tengo experiencia en la aplicación de técnicas estadísticas y de modelado para resolver problemas en diversas áreas, incluyendo la industria, la salud y las ciencias sociales.',
 	inspiringPhrase: 'La principal ventaja de los datos es que te dicen algo sobre el mundo que no sabías antes',
   inspiringPhraseAuthor: 'Hilary Mason',
@@ -40,7 +40,7 @@ export const speakerMartha = {
 export const speakerSofia = {
   name: 'Sofía España',
   image: 'assets/img/speakers/Sofia_Espana.jpg',
-  role: 'Ingeniera en mecatrónica',
+  role: 'Ingeniera en Mecatrónica',
   bio: 'Ing. en mecatrónica con experiencia en distintas áreas del mundo STEM',
 	inspiringPhrase: 'El mundo es tan grande como tu mente te lo permita',
   inspiringPhraseAuthor: 'Sofía España',
@@ -50,7 +50,7 @@ export const speakerSofia = {
 export const speakerAndrea = {
   name: 'Andrea Simbaña',
   image: 'assets/img/speakers/Andrea_Simbana.png',
-  role: 'Ingeniera electrónica',
+  role: 'Ingeniera Electrónica',
   bio: 'Andrea Simbaña, es ingeniera electrónica egresada de la UPS Quito, actualmente esta cursando una maestría en Educación con énfasis en TICs. Además de ser maestra de robótica en primaria y coach de competencia, es miembro voluntario del IEEE desde 2021. En el IEEE, ha desempeñado roles de secretaria, community manager, y actualmente forma parte de IEEE Students Sección Ecuador.',
 	inspiringPhrase: 'La exploración espacial es un recordatorio diario de que somos capaces de más de lo que creemos posible, y que la curiosidad y la colaboración pueden llevarnos más allá de lo que imaginamos',
   inspiringPhraseAuthor: 'Kellie Gerardi',
@@ -59,8 +59,8 @@ export const speakerAndrea = {
 
 export const speakerValeria = {
   name: 'Valeria Barzola',
-  image: 'assets/img/speakers/Valeria_Barzola.jpeg',
-  role: 'Líder técnico',
+  image: 'assets/img/speakers/Valeria_Barzola.jpg',
+  role: 'Tech Lead',
   bio: 'Ingeniera en Ciencias de la Computación, apasionada por las tecnologías emergentes y su potencial para revolucionar industrias. Poseo experiencia en desarrollo web y móvil, así como en la implementación de soluciones tecnológicas innovadoras. Me dedico a investigar y adoptar las últimas tendencias en tecnología, utilizando este conocimiento para resolver problemas complejos y generar un impacto significativo en los proyectos que lidero.',
 	inspiringPhrase: 'In the future, there will be no female leaders. There will just be leaders. (En el futuro no habrá mujeres líderes. Simplemente habrá líderes.)',
   inspiringPhraseAuthor: 'Sheryl Sandberg',
