@@ -5,7 +5,7 @@ interface Props {
   schedule: Talk[];
 };
 
-let { schedule } = Astro.props;
+const { schedule } = Astro.props;
 
 const getShortDescriptioin = (text: string) => {
   if (text.length > 200) {

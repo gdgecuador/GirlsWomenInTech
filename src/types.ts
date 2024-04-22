@@ -9,6 +9,7 @@ export type Speaker = {
   instagram?: string;
   linkedin?: string;
   inspiringPhrase?: string;
+  inspiringPhraseAuthor?: string;
 };
 
 export type Talk = {

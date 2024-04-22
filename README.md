@@ -1,54 +1,22 @@
-# Astro Starter Kit: Basics
+# Niñas y mujeres en tech website 🚀
+
+Website para evento de niñas y mujeres en tech.
+
+El Día de las Niñas y Mujeres en Tech es una celebración que tiene como objetivo inspirar y educar a jóvenes sobre las oportunidades de carrera en el sector tecnológico. Este evento destaca cómo las mujeres están liderando y transformando la industria tecnológica a través de su trabajo y liderazgo. Es una oportunidad para que las participantes descubran diferentes trayectorias profesionale
+
+Para ejecutar el proyecto en desarrollo solo corra:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
+npm start
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🛠️ Tools
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto fue creado con Astro 4. Utilizando bootstrap 5 para el diseño y estilos. A partir del template de [The Event](https://bootstrapmade.com/theevent-conference-event-bootstrap-template/).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🧞 Despliegue
 
-## 🚀 Project Structure
+Para despliegues a producción, solo se necesita hacer push a master. Automáticamente un github action se encargará de hacer build y deploy a Github Pages.
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este Github Pages tiene un custom domain en Cloudflare, por lo que se desplegará en https://girlsintic.gdggye.org.

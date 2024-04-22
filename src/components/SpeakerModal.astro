@@ -1,0 +1,137 @@
+---
+import { getModalId } from '../data';
+import type { Speaker } from '../types';
+
+interface Props {
+	speaker: Speaker;
+}
+
+const { speaker } = Astro.props;
+
+const modalId = getModalId(speaker);
+const titleId = `${modalId}-title`;
+
+---
+
+<div class="speaker-modal modal fade" id={modalId} tabindex="-1" role="dialog" aria-labelledby={titleId} aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content p-3">
+      <div class="modal-body">
+        <div class="section-header mb-5">
+          <h2 id={titleId}>
+            { speaker.name }
+          </h2>
+          <p>{ speaker.role }</p>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-4">
+            <img src={ speaker.image } alt={ speaker.name } class="img-fluid mb-3" />
+            <div class="social d-flex justify-content-center mb-2">
+              {
+                speaker.linkedin && (
+                  <a
+                    href={speaker.linkedin}
+                    target="_blank"
+                  ><i class="bi bi-linkedin"></i></a>
+                )
+              }
+              {
+                speaker.twitter && (
+                  <a
+                    href={speaker.twitter}
+                    target="_blank"
+                  ><i class="bi bi-twitter"></i></a>
+                )
+              }
+              {
+                speaker.facebook && (
+                  <a
+                    href={speaker.facebook}
+                    target="_blank"
+                  ><i class="bi bi-facebook"></i></a>
+                )
+              }
+              {
+                speaker.instagram && (
+                  <a
+                    href={speaker.instagram}
+                    target="_blank"
+                  ><i class="bi bi-instagram"></i></a>
+                )
+              }
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p>{ speaker.bio }</p>
+            <div class="quote">
+              <p>
+                { speaker.inspiringPhrase }
+              </p>
+              <div class="d-flex justify-content-end">
+                { speaker.inspiringPhraseAuthor }
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end mt-4">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .speaker-modal .section-header h2 {
+    font-size: 26px;
+    margin-bottom: 2px;
+  }
+  .speaker-modal img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .speaker-modal .social {
+    margin-bottom: 15px;
+  }
+
+  .speaker-modal .social a {
+    background: #e9edfb;
+    color: #5531ac;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .speaker-modal .social a:hover {
+    background: #9741E2;
+    color: #fff;
+  }
+
+  .speaker-modal .social a i {
+    font-size: 16px;
+    line-height: 0;
+  }
+
+  .speaker-modal .inspiring-phrase {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .speaker-modal .quote {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+    font-family: ui-monospace;
+  }
+
+</style>
