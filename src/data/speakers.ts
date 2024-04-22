@@ -1,5 +1,11 @@
 import type { Speaker } from "../types";
 
+export const speakerJoangie = 	{
+	name: 'Joangie Márquez',
+	image: 'assets/img/speakers/Joangie_Marquez.jpeg',
+	linkedin: 'https://www.linkedin.com/in/olgatohabandaduchi',
+};
+
 export const speakerOlga = 	{
 	name: 'Olga Tohabanda',
 	image: 'assets/img/speakers/Olga_Tohabanda.png',
