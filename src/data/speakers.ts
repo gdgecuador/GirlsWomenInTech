@@ -62,7 +62,7 @@ export const speakerValeria = {
   image: 'assets/img/speakers/Valeria_Barzola.jpg',
   role: 'Tech Lead',
   bio: 'Ingeniera en Ciencias de la Computación, apasionada por las tecnologías emergentes y su potencial para revolucionar industrias. Poseo experiencia en desarrollo web y móvil, así como en la implementación de soluciones tecnológicas innovadoras. Me dedico a investigar y adoptar las últimas tendencias en tecnología, utilizando este conocimiento para resolver problemas complejos y generar un impacto significativo en los proyectos que lidero.',
-	inspiringPhrase: 'In the future, there will be no female leaders. There will just be leaders. (En el futuro no habrá mujeres líderes. Simplemente habrá líderes.)',
+	inspiringPhrase: 'In the future, there will be no female leaders. There will just be leaders.',
   inspiringPhraseAuthor: 'Sheryl Sandberg',
   linkedin: 'https://www.linkedin.com/in/valeria-barzola/',
 };
