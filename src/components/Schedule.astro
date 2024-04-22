@@ -5,7 +5,19 @@ interface Props {
   schedule: Talk[];
 };
 
-const { schedule } = Astro.props;
+let { schedule } = Astro.props;
+
+const getShortDescriptioin = (text: string) => {
+  if (text.length > 200) {
+    return text.slice(0, 200) + '...';
+  }
+  return text;
+};
+
+schedule = schedule.map(talk => ({
+  ...talk,
+  descriptionShort: getShortDescriptioin(talk.description), 
+}));
 
 ---
 
@@ -16,18 +28,14 @@ const { schedule } = Astro.props;
       <p>Descubre las increibles charlas que se darán a cabo</p>
     </div>
 
-    <!-- <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-      necessitatibus voluptatem quis labore perspiciatis quia.</h3> -->
-
     <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-      <!-- Schdule Day 1 -->
       <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
         {
           schedule.map(schedule => (
           <div class="row schedule-item">
             <div class="col-md-2"><time> { schedule.time }</time></div>
-            <div class="col-md-10 d-flex align-items-center">
+            <div class="col-md-10 d-flex align-items-start">
               <div class="speaker">
                 <img
                   src={schedule.speaker.image}
@@ -36,20 +44,46 @@ const { schedule } = Astro.props;
               </div>
               <div>
                 <h4>{ schedule.title } <span>{ schedule.speaker.name }</span></h4>
-                <p> { schedule.description } </p>
+                <p
+                  class="agenda-short-description"
+                >
+                  { schedule.descriptionShort }
+                  {
+                    schedule.description.length > 200
+                    ? <button class="see-more-btn">Leer más</button>
+                    : ''
+                  }
+                </p>
+                <p
+                  class="agenda-description"
+                  style="display: none;"
+                >
+                  { schedule.description }
+                </p>
               </div>
             </div>
           </div>
           ))
         }
       </div>
-      <!-- End Schdule Day 1 -->
-
     </div>
 
   </div>
 
-</section><!-- End Schedule Section -->
+</section>
+
+<script>
+  const seeMoreBtns = document.querySelectorAll('.see-more-btn');
+  seeMoreBtns.forEach(btn => {
+    btn.addEventListener('click', (e: any) => {
+      const parent = e.target.parentElement.parentElement;
+      const shortDescription = parent.querySelector('.agenda-short-description');
+      const description = parent.querySelector('.agenda-description');
+      shortDescription.style.display = 'none';
+      description.style.display = 'block';
+    });
+  });
+</script>
 
 <style>
   #schedule {
@@ -144,7 +178,9 @@ const { schedule } = Astro.props;
   }
 
   #schedule .schedule-item .speaker img {
-    height: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
     transform: translateX(-50%);
     margin-left: 50%;
     transition: all ease-in-out 0.3s;
@@ -164,9 +200,19 @@ const { schedule } = Astro.props;
   }
 
   #schedule .schedule-item p {
-    font-style: italic;
     color: #152b79;
     margin-bottom: 0;
+  }
+
+  #schedule .see-more-btn {
+    color: #152b79;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: none;
   }
 
 </style>
