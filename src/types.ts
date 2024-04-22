@@ -8,6 +8,7 @@ export type Speaker = {
   facebook?: string;
   instagram?: string;
   linkedin?: string;
+  inspiringPhrase?: string;
 };
 
 export type Talk = {

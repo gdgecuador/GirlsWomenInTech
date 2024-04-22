@@ -31,6 +31,14 @@ const { speakers } = Astro.props;
               <p>{ speaker.role }</p>
               <div class="social">
                 {
+                  speaker.linkedin && (
+                    <a
+                      href={speaker.linkedin}
+                      target="_blank"
+                    ><i class="bi bi-linkedin"></i></a>
+                  )
+                }
+                {
                   speaker.twitter && (
                     <a
                       href={speaker.twitter}
@@ -54,14 +62,6 @@ const { speakers } = Astro.props;
                     ><i class="bi bi-instagram"></i></a>
                   )
                 }
-                {
-                  speaker.linkedin && (
-                    <a
-                      href={speaker.linkedin}
-                      target="_blank"
-                    ><i class="bi bi-linkedin"></i></a>
-                  )
-                }
               </div>
             </div>
           </div>
@@ -81,6 +81,11 @@ const { speakers } = Astro.props;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+  }
+
+  #speakers .speaker img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
   #speakers .speaker .details {
