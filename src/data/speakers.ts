@@ -67,11 +67,22 @@ export const speakerValeria = {
   linkedin: 'https://www.linkedin.com/in/valeria-barzola/',
 };
 
+export const speakerDenisse = {
+  name: 'Denisse Orozco',
+  image: 'assets/img/speakers/Denisse_Orozco.jpg',
+  role: 'Cientifico de Datos',
+  bio: 'Economista con experiencia en ciencia de datos específicamente en la interpretabilidad de modelos de scoring crediticio con Machine Learning en el sector bancario. Desarrolló proyectos para el Banco Mundial y ha sido Co-embajadora de WiDS@ESPOL y vicepresidenta de TAWS.',
+	inspiringPhrase: 'Question everything, including your questions.',
+  inspiringPhraseAuthor: 'Julian Baggini',
+  linkedin: 'https://www.linkedin.com/in/denisse-orozco-0a7942191/',
+};
+
 export const speakers: Array<Speaker> = [
   speakerOlga,
   speakerZully,
   speakerMartha,
   speakerSofia,
   speakerAndrea,
-  speakerValeria
+  speakerValeria,
+  speakerDenisse,
 ];
