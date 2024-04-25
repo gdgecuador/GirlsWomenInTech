@@ -49,7 +49,7 @@ export const speakerSofia = {
 
 export const speakerAndrea = {
   name: 'Andrea Simbaña',
-  image: 'assets/img/speakers/Andrea_Simbana.png',
+  image: 'assets/img/speakers/Andrea_Simbana.jpg',
   role: 'Ingeniera Electrónica',
   bio: 'Andrea Simbaña, es ingeniera electrónica egresada de la UPS Quito, actualmente esta cursando una maestría en Educación con énfasis en TICs. Además de ser maestra de robótica en primaria y coach de competencia, es miembro voluntario del IEEE desde 2021. En el IEEE, ha desempeñado roles de secretaria, community manager, y actualmente forma parte de IEEE Students Sección Ecuador.',
 	inspiringPhrase: 'La exploración espacial es un recordatorio diario de que somos capaces de más de lo que creemos posible, y que la curiosidad y la colaboración pueden llevarnos más allá de lo que imaginamos',
